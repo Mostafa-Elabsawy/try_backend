@@ -4,7 +4,8 @@ import Todo from "../models/Todo.js";
 const router = express.Router();
 
 // get all todos
-router.get("/", async (req, res) => {
+router.get("/", async (req, res) =>
+{  
   try {
     const todos = await Todo.find().sort({ createdAt: -1 });
     res.json(todos);

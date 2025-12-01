@@ -7,8 +7,5 @@ const PORT = process.env.PORT || 4444;
 connectDB();
 app.use(cors());
 app.use(express.json());
-
 app.use("/api/todos", todosRouter);
-
-
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running localy on on http://localhost:${PORT}`));
