@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { connectDB } from "./models/connection.js";
+import { connectDB } from "./models/connectio.js";
 import todosRouter from "./routes/todo.js";
 const app = express();
 const PORT = process.env.PORT || 4444;
